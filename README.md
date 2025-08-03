@@ -31,17 +31,42 @@ Key Steps
 
 Business Recommendations:
 
-1. The Central zone had the highest cancellation rate, ~double that of other zones. Swiggy should audit vendor reliability in this region and consider assigning buffer partners during peak times.
+1. ##Central Zone is Driving High Cancellations
+The Central zone has nearly double the cancellation rate compared to other zones. This points to potential reliability issues, either from vendors or delivery partner availability.
 
-2. Delivery delays spike 9AM, especially on Sundays, and 7PM on Fridays. Swiggy could dynamically allocate more delivery partners or reroute traffic during these high-load windows.
+Recommendation:
+Swiggy should audit vendors in this zone for order acceptance and readiness behavior. Additionally, having backup delivery partners on standby during peak hours can help prevent last-minute cancellations.
 
-3. Certain delivery partners consistently show high average delays. A tier-based system should be introduced to reward top performers and retrain or replace the lowest-performing partners.
+2. ##Delivery Delays Peak at Specific Times
+Delays are noticeably higher at 9 AM (especially on Sundays) and 7 PM on Fridays. These are likely high-order periods that aren't being matched with adequate delivery capacity.
 
-4. Customer ratings tend to dip on weekends, particularly on Saturdays. Weekend-specific quality checks for restaurants and optional pre-scheduled orders can help improve experience.
+Recommendation:
+Introduce time-based dynamic fleet allocation. More delivery partners should be auto-assigned during these windows. Alternatively, traffic rerouting or smart batching logic can help absorb the pressure.
 
-5. A few restaurant-zone combinations had both low ratings and high Cancellationn Rate. Swiggy should flag these vendors for review or probation.
+3. ##Customer Ratings Drop on Weekends
+Ratings are consistently lower on weekends, with Saturday being the most affected. This suggests that order experience — food or delivery — is not being managed well during weekends.
 
-6. Wed, Fri and Saturday -  volume drives both reduced customer rating and cancellations. A predictive staffing model should be used to pre-assign additional delivery capacity in hotspots every weekend.
+Recommendation:
+Introduce weekend-specific quality checks for restaurants. Swiggy can also allow pre-scheduled orders during peak hours to spread out the load. This gives kitchens more prep time and reduces stress on partners.
+
+4. ##Some Restaurant–Zone Pairs Are Risky
+A few restaurant and zone combinations have both high cancellation rates and low customer ratings — this is a clear red flag.
+
+Recommendation:
+These combinations should be flagged for internal review. Swiggy should engage with those vendors directly, consider applying probation rules, or deprioritize them temporarily in the app.
+
+5. ##Midweek and Weekend Operational Bottlenecks
+Wednesdays, Fridays, and Saturdays show clear signs of strain — more orders, more cancellations, and lower ratings.
+
+Recommendation:
+A predictive staffing model can help. Based on historical trends, Swiggy should pre-assign additional delivery capacity for those days and proactively limit restaurant exposure in overloaded zones if needed.
+
+6. ##Consistently Poor Performer Partners
+Some delivery partners have significantly higher average delays regardless of zone or time. These outliers affect the overall service reliability.
+
+Recommendation:
+A performance tiering system can help here. Top performers can be incentivized or prioritized for time-sensitive orders, while consistent low performers should be retrained or rotated out of priority slots.
+
 
 Dataset:
 
